@@ -1,0 +1,11 @@
+Some times you just need to write something down.  Since I spend most of my day at the command line anyways,
+this is just a simple means to accomplish that.  Usage is as follows:
+
+1. Get the logit executable
+- wget https://raw.github.com/cgallemore/logit/master/logit
+
+2. Create a symbolic link, for example:
+- sudo ln -s ~/logit /usr/local/bin/logit
+
+3. logit "Drop's mic..."
+4. cat ~/.logit/*.log

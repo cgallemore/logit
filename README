@@ -2,6 +2,7 @@ Some times you just need to write something down.  Since I spend most of my day 
 
 1. Get the logit executable
 - wget https://raw.github.com/cgallemore/logit/master/logit
+- Make it executable, e.g. sudo chmod +x logit
 
 2. Create a symbolic link, for example:
 - sudo ln -s ~/logit /usr/local/bin/logit

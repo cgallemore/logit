@@ -9,4 +9,8 @@ Some times you just need to write something down.  Since I spend most of my day 
 3. logit "Drop's mic..."
 4. cat ~/.logit/*.log
 
-Logit creates a .logit directory in your home directory and creates a file based on the current day.  As you log entries throughout the day, logit appends to the file and prepends each entry with a time so you can have a chronological view of entries.
+The location of where logit writes the log files if configurable by setting the environment variable LOGIT_LOCATION, for example if you want to save your files in your Dropbox folder so you can access them from anywhere, you would do the following:
+
+export LOGIT_LOCATION='~/Dropbox/logit'
+
+Now all your logit files will appear in the logit folder in your Dropbox.

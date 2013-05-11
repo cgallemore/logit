@@ -13,6 +13,14 @@ Usage:
   >>> logit "A nickel ain't worth a dime anymore." -s
   When you come to a fork in the road, take it.
   A nickel ain't worth a dime anymore
+  >>> logit -h
+  usage: logit [-h] [-s] [-f FILE] message
+  positional arguments:
+    message               The message you want to log.
+  optional arguments:
+    -h, --help            show this help message and exit
+    -s, --show            Show the log file after writing to it.
+    -f FILE, --file FILE  The file to write to.
 
 By default logit will write a daily log file in the format logit-mm-dd-yyyy.log to your home directory.  If you wish to write those files elsewhere, you can set the following environment variable:
 

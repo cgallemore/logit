@@ -3,7 +3,7 @@ Logit - Log a note from your terminal
 
 Some times you just need to write something down.  Since I spend most of my day at the command line anyways, this is just a simple means to accomplish that.  Usage is as follows:
 
-* pip -e git+git://github.com/cgallemore/logit.git#egg=logit or clone the project and python setup.py install
+* pip install -e git+git://github.com/cgallemore/logit.git#egg=logit or clone the project and python setup.py install
 * Open a terminal and logit:
 
 <pre>

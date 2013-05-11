@@ -16,6 +16,6 @@ Usage:
 
 By default logit will write a daily log file in the format logit-mm-dd-yyyy.log to your home directory.  If you wish to write those files elsewhere, you can set the following environment variable:
 
-* export LOGIT_LOCATION='~/Dropbox/logit'
+* export LOGIT_LOCATION='/Users/cgallemore/Dropbox/logit'
 
 Now, the daily log file will be written to the logit folder in your Dropbox folder.

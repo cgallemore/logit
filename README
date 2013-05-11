@@ -1,16 +1,23 @@
+Logit - Log a note from your terminal
+=====================================
+
 Some times you just need to write something down.  Since I spend most of my day at the command line anyways, this is just a simple means to accomplish that.  Usage is as follows:
 
-1. Get the logit executable
-- wget https://raw.github.com/cgallemore/logit/master/logit
+* pip -e git+git://github.com/cgallemore/logit.git#egg=logit or clone the project and python setup.py install
+* Open a terminal and logit:
 
-2. Create a symbolic link, for example:
-- sudo ln -s ~/logit /usr/local/bin/logit
+<pre>
+>>> logit "When you come to a fork in the road, take it."
+>>> cat ~/.logit/*.log
+When you come to a fork in the road, take it.
+>>> logit "A nickel ain't worth a dime anymore." -s
+When you come to a fork in the road, take it.
+A nickel ain't worth a dime anymore
+</pre>
 
-3. logit "Drop's mic..."
-4. cat ~/.logit/*.log
+By default logit will write a daily log file in the format logit-mm-dd-yyyy.log to your home directory.  If you wish to write those files elsewhere, you can set the following environment variable:
 
-The location of where logit writes the log files is configurable by setting the environment variable LOGIT_LOCATION.  If it's not set, the default location is ~/.logit.  For example if you want to save your files in your Dropbox folder so you can access them from anywhere, you would do the following:
+* export LOGIT_LOCATION='~/Dropbox/logit'
 
-export LOGIT_LOCATION='~/Dropbox/logit'
+Now, the daily log file will be written to the logit folder in your Dropbox folder.
 
-Now all your logit files will appear in the logit folder in your Dropbox.

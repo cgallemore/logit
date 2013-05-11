@@ -15,13 +15,14 @@ if sys.argv[-1] == "publish":
 
 setup(
     name='logit',
-    version=0.1,
+    version='0.1.0',
     description='Sometimes you just need to write something down, so logit.',
     long_description='',
     author='Chad Gallemore',
     author_email='chad@gallemore.me',
     url='https://github.com/cgallemore/logit',
     license=open('LICENSE').read(),
+    package_data={'': ['LICENSE']},
     classifiers=(
         'Environment :: Console',
         'Intended Audience :: Developers',
